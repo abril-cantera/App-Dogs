@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miltonian&display=swap" rel="stylesheet">
+    <title>Perritos aleatorios</title>
+  </head>
+  <body>
+    <h1 class="title-principal">Lomitos App</h1>
+
+    <span id="error"></span>
+
+    <section class="container-1" id="favoritesDogs">
+      <h2 class="title-h2">Lomitos aleatorios</h2>
+
+      <article class="container-random">
+        <img id="img1" alt="Foto de perrito" />
+        <button id="btn1">
+          Guardar en favoritos
+        </button>
+      </article>
+
+      <article class="container-random">
+        <img id="img2" alt="Foto de perrito" />
+        <button id="btn2">
+          Guardar en favoritos
+        </button>
+      </article>
+
+      <button class="button" onclick="loadRandomDogs()">Recargar</button>
+    </section>
+
+    <section class="containet-upload" id="uploadingDogs">
+      <h2>Sube la foto de tu Lomito</h2>
+
+      <form class="uploading" id="uploadingForm">
+        <input id="file" type="file" name="file">
+        <button type="button" onclick="uploadDogPhoto()">Subir foto</button>
+      </form>
+    </section>
+
+    <section id="section-h2">
+      <h2 class="title-h2-favorites">Lomitos Favoritos</h2>
+    </section>
+
+    <section class="container-favorite" id="favoriteDogs">
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
